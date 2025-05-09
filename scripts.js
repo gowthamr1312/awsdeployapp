@@ -1,7 +1,7 @@
 // Add your API endpoint here
 var API_ENDPOINT = "https://71gaj43a5l.execute-api.ap-south-1.amazonaws.com/prod";
 
-fetch("arn:aws:apigateway:ap-south-1::/apis/144wdle48b/routes/6sxta8k")
+fetch("https://144wdle48b.execute-api.ap-south-1.amazonaws.com/dev")
   .then(res => console.log("Visit logged"))
   .catch(err => console.error("Error logging visit", err));
 
