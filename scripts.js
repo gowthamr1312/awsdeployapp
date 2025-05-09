@@ -1,6 +1,10 @@
 // Add your API endpoint here
 var API_ENDPOINT = "https://71gaj43a5l.execute-api.ap-south-1.amazonaws.com/prod";
 
+fetch("arn:aws:apigateway:ap-south-1::/apis/144wdle48b/routes/6sxta8k")
+  .then(res => console.log("Visit logged"))
+  .catch(err => console.error("Error logging visit", err));
+
 // AJAX POST request to save student data
 document.getElementById("savevisitor").onclick = function(){
     var inputData = {
