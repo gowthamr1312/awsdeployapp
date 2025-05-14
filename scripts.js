@@ -1,7 +1,7 @@
 // Add your API endpoint here
 var API_ENDPOINT = "https://71gaj43a5l.execute-api.ap-south-1.amazonaws.com/prod";
 
-fetch("https://144wdle48b.execute-api.ap-south-1.amazonaws.com/dev")
+fetch("https://144wdle48b.execute-api.ap-south-1.amazonaws.com/dev/LogVisit")
   .then(res => console.log("Visit logged"))
   .catch(err => console.error("Error logging visit", err));
 
