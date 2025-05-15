@@ -1,6 +1,6 @@
 <script>
   // Visitor Tracking (GET)
-  var TRACKING_API_URL = "https://71gaj43a5l.execute-api.ap-south-1.amazonaws.com/prod/track";
+  var TRACKING_API_URL = "https://zcrjgg8oag.execute-api.ap-south-1.amazonaws.com/Dev";
   (function logVisitor() {
       const path = window.location.pathname;
       fetch(`${TRACKING_API_URL}?path=${encodeURIComponent(path)}`)
