@@ -1,13 +1,8 @@
 var API_ENDPOINT = "https://71gaj43a5l.execute-api.ap-south-1.amazonaws.com/prod";
 
-var TRACKING_API_URL = "https://zcrjgg8oag.execute-api.ap-south-1.amazonaws.com/Dev";
-  (function logVisitor() {
-      const path = window.location.pathname;
-      fetch(`${TRACKING_API_URL}?path=${encodeURIComponent(path)}`)
-        .then(res => res.json())
-        .then(data => console.log("Visitor logged successfully", data))
-        .catch(err => console.error("Error logging visit", err));
-  })();
+fetch("https://zcrjgg8oag.execute-api.ap-south-1.amazonaws.com/Dev")
+  .then(res => console.log("Visit logged"))
+  .catch(err => console.error("Error logging visit", err));
 
 // AJAX POST request to save student data
 document.getElementById("savevisitor").onclick = function(){
